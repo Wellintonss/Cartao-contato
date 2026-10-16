@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wellinton & Rayssa</title>
+<style>
+:root{
+  --bg:#f4f1ea;
+  --surface:#ffffff;
+  --ink:#1c1b19;
+  --muted:#6b6358;
+  --line:#e4ddd0;
+  --accent:#3f6b4f;
+  --accent-soft:#e7eee9;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15140f;
+    --surface:#1e1c16;
+    --ink:#efe9dc;
+    --muted:#a39c8c;
+    --line:#332f26;
+    --accent:#86b896;
+    --accent-soft:#263129;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15140f;
+  --surface:#1e1c16;
+  --ink:#efe9dc;
+  --muted:#a39c8c;
+  --line:#332f26;
+  --accent:#86b896;
+  --accent-soft:#263129;
+  color-scheme: dark;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+.wrap{
+  max-width:600px;
+  margin:0 auto;
+  padding:3rem 1.5rem 4rem;
+}
+header{ margin-bottom:2rem; }
+.eyebrow{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.72rem;
+  letter-spacing:.04em;
+  color:var(--muted);
+  margin:0 0 .6rem;
+}
+h1{
+  font-size:clamp(2rem,7vw,2.8rem);
+  line-height:1.08;
+  margin:0 0 .5rem;
+  font-weight:600;
+}
+.sub{
+  color:var(--muted);
+  font-size:1rem;
+  margin:0;
+  max-width:46ch;
+}
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:6px;
+  overflow:hidden;
+}
+.group-label{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.74rem;
+  letter-spacing:.03em;
+  color:var(--accent);
+  padding:1.1rem 1.4rem .5rem;
+}
+.row{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  padding:.75rem 1.4rem;
+  border-top:1px dashed var(--line);
+}
+.group-label + .row{ border-top:none; }
+.row .label{
+  color:var(--muted);
+  font-size:.9rem;
+  flex-shrink:0;
+}
+.row a, .row .val{
+  color:var(--ink);
+  text-decoration:none;
+  font-size:1.02rem;
+  text-align:right;
+  word-break:break-word;
+}
+.row a{ border-bottom:1px solid var(--accent); }
+.row a:hover{ color:var(--accent); }
+footer{
+  margin-top:2.5rem;
+  color:var(--muted);
+  font-size:.82rem;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">cartão de contato</p>
+    <h1>Wellinton &amp; Rayssa</h1>
+    <p class="sub">Toque em qualquer item para abrir direto — e-mail, WhatsApp ou Instagram.</p>
+  </header>
+
+  <div class="card">
+    <p class="group-label">Wellinton Bendlin Souza</p>
+    <div class="row">
+      <span class="label">e-mail</span>
+      <a href="mailto:Wellintonbendlins@gmail.com">Wellintonbendlins@gmail.com</a>
+    </div>
+    <div class="row">
+      <span class="label">whatsapp</span>
+      <a href="https://wa.me/qr/YFTOLP3Q5IC5N1" target="_blank" rel="noopener">+55 42 9 9917-9214</a>
+    </div>
+    <div class="row">
+      <span class="label">whatsapp</span>
+      <a href="https://wa.me/554284254799" target="_blank" rel="noopener">+55 42 9 8425-4799</a>
+    </div>
+    <div class="row">
+      <span class="label">instagram</span>
+      <a href="https://instagram.com/W.Bendlin" target="_blank" rel="noopener">@W.Bendlin</a>
+    </div>
+
+    <p class="group-label">Rayssa Paloma Paiva Vieira</p>
+    <div class="row">
+      <span class="label">e-mail</span>
+      <a href="mailto:Rayssapalomabendlin@gmail.com">Rayssapalomabendlin@gmail.com</a>
+    </div>
+    <div class="row">
+      <span class="label">whatsapp</span>
+      <a href="https://wa.me/5515996212579" target="_blank" rel="noopener">+55 15 9 9621-2579</a>
+    </div>
+    <div class="row">
+      <span class="label">instagram</span>
+      <a href="https://instagram.com/_rayssapaloma" target="_blank" rel="noopener">@_rayssapaloma</a>
+    </div>
+  </div>
+
+  <footer>cartão pessoal &middot; atualizado em outubro de 2026</footer>
+</div>
+</body>
+</html>
